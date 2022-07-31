@@ -1,0 +1,1 @@
+Spring GraphQL with mutation
