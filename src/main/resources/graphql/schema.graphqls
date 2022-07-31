@@ -1,0 +1,26 @@
+
+type Account {
+    id: ID!
+    email: String
+    name: String
+    verify: String
+}
+
+input AccountRequest {
+    email: String!
+    name: String!
+    verify: String
+}
+
+input UpdateAccountRequest {
+    email: String
+    name: String
+    verify: String
+}
+
+type Mutation {
+    createAccount(input: AccountRequest!): Account
+    updateAccount(id:ID!, input: UpdateAccountRequest!): Account
+}
+
+
